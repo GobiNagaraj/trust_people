@@ -1,0 +1,11 @@
+Missing Images(privacy concern) in index.php directory:
+1. "avatar.png": Profile picture
+2. "trustpeople.png": Logo
+ 
+Future Fixes:
+1. Optimized Mobile View
+2. Font
+3. Navbar
+4. Optimized Calendar
+5. Fixed ID
+6. Database .CSV file

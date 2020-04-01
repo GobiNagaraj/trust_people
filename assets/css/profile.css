@@ -1,0 +1,232 @@
+
+/* Profile image navbar CSS */
+.nav-item img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+/* container color and radius css */
+  .container {
+    border-radius: 25px;
+    background-color: #f1f1f1;
+  }
+
+  /* profile card CSS */
+  .profile-card img {
+    max-width: 145px;
+    border-radius: 50%;
+    margin: 1%;
+    
+  }
+ 
+  
+   /* post card CSS */
+   .post-card img {
+    max-width: 75px;
+    border-radius: 50%;
+    
+  }
+
+
+/* CSS for image overlay of the edit profile picture */
+.profile-edit {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+ 
+  border-radius: 50%;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 92%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: gray;
+  border-radius: 50%;
+
+}
+
+.profile-edit:hover .cover {
+  opacity: 0.6;
+}
+
+.icon {
+  color: white;
+  font-size: 55px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
+/* CSS for Overlays */
+		#overlay{
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(0,0,0,0.6);
+		}
+
+
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  .trust-people-logo img {
+    max-width: 100px;
+  }
+  .trust-people-logo p {
+    font-size: xx-small;
+  }
+  
+  .navigation a {
+    font-size: xx-small;
+  }
+
+  .profile-logo img {
+    max-width: 30px;
+  }
+
+  .profile-card img {
+    max-width: 55px;
+    border-radius: 50%;
+    margin: 1%;
+    
+  }
+  .profile-card h4 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+  }
+  .profile-card p {
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+  }
+  .profile-card a {
+    font-size: xx-small;
+  }
+  .profile-card i  {
+    font-size: x-small;
+  }
+  .profile-card h7 {
+    font-size: x-small;
+  }
+}
+
+
+
+/* Password Validation CSS(Test) */
+/* Password Input --------- */
+
+
+/* Basic Config --------- */
+
+
+ul {
+	padding-left: 20px;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	        align-items: flex-start;
+}
+
+li { 
+	margin-bottom: 8px;
+	color: #525f7f;
+	position: relative;
+}
+
+li:before {
+  content: "";
+	width: 0%; height: 2px;
+	background: #2ecc71;
+	position: absolute;
+	left: 0; top: 50%;
+	display: block;
+	-webkit-transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+
+/* Password Input --------- */
+
+
+input[type="password"]:focus {
+	border-color: rgba(50, 151, 211, .45);
+}
+
+
+/* Checkmark & Strikethrough --------- */
+
+.is_valid { color: rgba(136, 152, 170, 0.8); }
+.is_valid:before { width: 100%; }
+
+.checkmark_container {
+	border-radius: 50%;
+	position: absolute;
+	top: -15px; right: -15px;
+	background: #2ecc71;
+	width: 50px; height: 50px;
+	visibility: hidden;
+	opacity: 0;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-transition: opacity .4s ease;
+	transition: opacity .4s ease;
+}
+
+.show_checkmark {
+  visibility: visible;
+  opacity: 1;
+}
+
+.checkmark {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 15;
+  stroke-linecap: round;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+}
+
+.checked { -webkit-animation: draw 0.5s ease forwards; animation: draw 0.5s ease forwards; }
+
+@-webkit-keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
