@@ -3,16 +3,113 @@
   src: url(../fonts/fontawesome-webfont.woff);
 }
 
+body {
+    font-family: "Source Sans Pro",Lato,Arimo,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #F7F7F7;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+}
+
+.linkedin_url{
+    color: red;
+    margin-left: 70px;
+}
+
+.btn-primary{
+    background: #1f4177 !important;
+    color: #fff !important;
+}
+
 .right{
   float: right;
 }
 
+.msg{
+  float: left;
+}
+
+.header-nav{
+    position: relative;
+}
+
+.online-icon{
+    font-size: 14px; 
+    color: #27da2b;
+    margin: 50px 20px 0px 0px;
+}
+
 .homeLbl{
-  color: rgb(97, 97, 97);
+    /*color: rgb(97, 97, 97);*/
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     font-family: "Source Sans Pro";
     text-decoration: none;
+    color: #56ade7;
+    margin-left: 45px;
+    vertical-align: middle;
+}
+
+.commentDiv{
+    width: 55%;
+    margin: 1px 120px;
+    box-sizing: border-box;
+    padding: 2px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    /*box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;*/
+}
+
+.mobileHomePage{
+    display: none;
+}
+
+.commentPara{
+    color: #000; 
+    font-size: 13px; 
+    font-family: Source Sans Pro; 
+    text-align: left;
+    margin: 10px 0px 0px auto;
+}
+
+.commentsUserImg{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.cmtUserImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.btn-comment{
+    background-color: #56baed;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 18px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 5px 10px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 50%;
+    margin: 7px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .homeLbl:focus, .homeLbl:hover{
@@ -24,7 +121,7 @@
 }
 
 .registerBtn{
-  background-color: rgb(3, 169, 244);
+    background-color: rgb(3, 169, 244);
     border: 1px solid rgb(2, 198, 115);
     border-radius: 5px;
     box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
@@ -40,8 +137,9 @@
     font-style: normal;
     text-decoration: none;
     font-size: 17px;
-    padding: 3px;
+    padding: 2px;
     color: rgb(255, 255, 255);
+    margin-top: -3px;
 }
 
 .registerBtn:focus, .registerBtn:hover{
@@ -99,6 +197,15 @@ h2{
     font-family: "Source Sans Pro";
 }
 
+.profileH2{
+    text-align: left;
+    overflow-wrap: break-word;
+    font-size: 16px;
+    color: rgb(19, 46, 85);
+    font-family: "Source Sans Pro";
+    margin-top: 115px;   
+}
+
 .h1_letter{
     padding: 5px;
     margin: 0px;
@@ -149,6 +256,7 @@ p{
   top: 10px; 
   width: 250px; 
   margin-top: 10px;
+  border-top: 1px solid #f6f6f6;
 }
 
 .righthr{
@@ -157,10 +265,29 @@ p{
   top: 10px; 
   width: 265px; 
   margin-top: 10px;
+  border-top: 1px solid #f6f6f6;
 }
 
 /*.container { width: 90%; text-align: center; margin: auto;}
 background: #121212;*/
+
+.commentSection{
+  border: none; 
+  background-color: #fff; 
+  color: rgb(51, 51, 51); 
+  float: right; 
+  font-weight: bold;
+}
+
+#linkedin_url{
+  margin: auto 70px;
+}
+
+.hr_Enterprise{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-top: 1px solid #9e9e9e;
+}
 
 p{
   font-family: "Source Sans Pro";
@@ -186,6 +313,22 @@ p{
   margin-bottom: 14px;
   /*text-shadow:1px 1px 0px rgba(0,0,0,0.5);*/
   border: 1px solid rgba(0,0,0,0.15);
+}
+
+.job_location_country{
+    margin-left: 55px;
+}
+
+.job_state{
+    width: 180%;
+}
+
+.post_city{
+    margin: -34px 170px;
+}
+
+.post-city-txt{
+    width: 115%;
 }
 
 .button:hover{
@@ -278,37 +421,786 @@ p{
 }
 
 .google, .google:hover{
-  color: red;
+  /*color: red;*/
+  color: #ccc;
+  box-shadow: 0px 3px 3px 0px;
 }
 
 .facebook, .facebook:hover{
-  color: #3b5998;
+  /*color: #3b5998;*/
+  color: #ccc;
+  box-shadow: 0px 3px 3px 0px;
 }
 
 .linkedin, .linkedin:hover{
-  color: #0e76a8;
+  /*color: #0e76a8;*/
+  color: #ccc;
+  box-shadow: 0px 3px 3px 0px;
 }
 
 .forgot-header{
   font-family: "Source Sans Pro";
-  font-size: 29px;
+  font-size: 22px;
   text-align: left;
   color: #5dbbed;
 }
 
+.header-msg{
+  font-family: "Source Sans Pro" !important;
+  font-size: 20px !important;
+  text-align: left !important;
+  color: #5dbbed !important;
+}
+
+.content-msg{
+  font-size: 16px !important;
+  color: rgb(0, 69, 171) !important;
+}
+
+.for_enterprise{
+  margin-right: 100px;
+}
+
+.pForEnterprise{
+    line-height: 1;
+    padding: 5px;
+    margin: 0px;
+    color: rgb(97, 97, 97);
+    font-family: Arimo;
+    text-align: left;
+    font-size: 17px;
+    word-spacing: 20px;
+}
+
+.enterpriseDiv{
+    padding: 20px;
+}
+
+#profile{
+    box-sizing: border-box;
+    padding: 20px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+.repeatedDiv{
+    margin: 20px 0px 0px 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+    /*width: 70%;*/
+}
+
+.repeatedDivs{
+    margin: 20px 0px 0px 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+    /*width: 70%;*/
+}
+
+.repeatedDiv-profile{
+    margin: 20px 0px 0px 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+.center-content{
+    margin-left: -45px;
+}
+
+.profile-div-right{
+    float: right !important;
+    text-align: right;
+    padding: 0px;
+}
+
+.profile-div-left{
+    text-align: left;
+    padding: 0px;
+}
+
+.profile-div-left label{
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 15px 15px 0 0;
+}
+
+.repeatedDivCmt{
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+.postDiv{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 50px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 0px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+/*.follow_btn, .un_follow_btn{
+    margin: 10px;
+}*/
+
+.ads-img{
+    margin-left: -12px;
+}
+
+.h3Profile{
+    font-family: Arimo;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(19, 46, 85);
+}
+
+.h3Forenterprise{
+    font-family: Arimo;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(19, 46, 85);
+    margin-top: 0px !important;
+}
+
+.h5Forenterprise{
+    font-family: Arimo;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    color: #0045ab;
+    line-height: 2;
+}
+
+.paraRight{
+    color: rgb(51, 51, 51);
+    font-family: Source Sans Pro;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.heart{
+    content:"\f004";
+}
+
+.same, .yes, .same:hover, .yes:hover{
+    text-decoration: none !important;
+    color: #000 !important;
+    float: right;
+}
+
+#comment{
+    font-size: 20px;
+    padding: 10px;
+    color: #000;
+}
+
+#share{
+    font-size: 20px;
+    float: right;
+    color: #000;
+}
+
+.comment-hr{
+    border-top: #f3f3f3; 
+    margin-top: 210px;
+    width: 100%;
+}
+
+.request-hr{
+    width: 70%;
+    border-top: #f3f3f3;
+    margin-top: 20px;
+}
+
+.enterpriseCnt{
+    font-size: 14px;
+    color: #0045ab;
+    font-family: Arimo;
+    text-align: justify;
+    word-break: break-word;
+}
+
+.profile-followers{
+    font-size: 14px;
+    color: #0045ab;
+    font-family: Arimo;
+    text-align: justify;
+}
+
+.profileDiv{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 0px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+.profileImg{
+    width: 60%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.navbar-nav{
+    margin-top: 15px;
+}
+
+.navbar{
+    height: 0px;
+}
+
+.userImg{
+    width: 40px;
+    height: 40px;
+    /*margin-top: -10px;*/
+    border-radius: 50%
+}
+
+.notifyImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.notify-drop-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.notify-drop-name{
+    font-size: 14px;
+    color: #0045ab;
+}
+
+.social-icons{
+    font-size: 17px;
+    /*margin: 0px -170px auto 110px;*/
+}
+
+.social-icons-home{
+    font-size: 17px;
+    margin: 0px -170px auto 0px;
+}
+
+.trust-lbl, .un-trust-lbl, .comment-lbl{
+    font-size: 15px;
+    color: #0045ab;
+}
+
+.social-icons-profile{
+    font-size: 17px;
+    margin: 0px -170px auto 210px;
+}
+
+.posted-dt{
+  margin: 0px auto auto 60px;
+}
+
+.posted-profile{
+  margin: 0px auto auto -60px;
+}
+
+.home-table{
+  margin-top: 100px; 
+  color: #0045ab;
+}
+
+.advertisement{
+  top: 1%;
+  position: absolute; 
+  right: 0;
+}
+
+#divide{
+  padding: 3px;
+}
+
+.userImgs{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.weak-password{
+  color: red;
+  margin-left: 20px;
+}
+.strong-password{
+  color: green;
+  margin-left: 20px;
+}
+.medium-password{
+  color: #ff8100;
+  margin-left: 20px;
+}
+
+.see_more, .see_more:hover{
+    font-size: 12px;
+    float: right;
+    color: #9e9e9e;
+    text-decoration: none;
+}
+
+.select_profile{
+    width: 25%;
+    margin: 75px 0px 0px -110px;
+}
+
+.details_area{
+  height: 111px;
+  width: 100%;
+}
+.post_now{
+  font-family: Arimo;
+  font-size: 18px;
+  padding: 10px;
+  color: rgb(19, 46, 85);
+  font-weight: bold;
+}
+label{
+  color: #0045ab;
+  font-weight: 400 !important;
+  margin: 0px 0px 0px 45px;
+}
+.txtPost{
+  background-color: #fafcfd !important;
+  border-radius: 6px;
+  margin-left: 70px;
+  color: #132e56 !important;
+  padding: 5px 15px;
+}
+
+.check_mobile{
+  color: red;
+  margin-left: -245px;
+}
+
+.postNow-radio{
+    margin-left: 70px;
+}
+span{
+  color: rgb(19, 46, 85);
+}
+#mandatory{
+  color: red;
+}
+
+.profile-dropdown{
+  overflow-wrap: break-word;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: "Source Sans Pro";
+}
+
+/*navbar*/
+.topnav {
+    overflow: visible;
+    background: #084177;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    /*color: rgb(97, 97, 97);*/
+    color: #fff;
+    text-align: left;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #request {
+    box-sizing: border-box;
+    padding: 20px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+  /*.liveCmt{
+    margin: 2px -10px;
+    width: 65%;
+    overflow: hidden;
+    border:1px solid #f1f1f1;
+    padding: 5px;
+    background: #fff;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+  }*/
+  
+  .liveCmt {
+    margin: 0px 50px;
+    width: 85%;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    padding: 5px;
+    background: #fff;
+    box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+}
+
+  .content-profile{
+    margin: 20px auto auto -115%;
+    width: 190%;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+  
+  .mobile-logout{
+      visibility: hidden !important;
+  }
+  
+  .imageA{
+      float: right !important;
+  }
+
+  .dropdown {
+    float: right;
+    position: unset;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 3px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 10px;
+  }
+
+  .navbar-brand{
+      padding: 15px 20px !important;
+      font-size: 20px !important;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .news-feed, .news-feed:hover, .news-feed:active, .news-feed:focus{
+      width: 133px;
+      color: #fff;
+      background-color: #084177 !important;
+      border-color: #f7f7f7 !important;
+  }
+
+  .dropdown-toggle-split, .dropdown-toggle-split:hover, .dropdown-toggle-split:active, .dropdown-toggle-split:focus{
+      color: #fff;
+      background-color: #084177 !important;
+      border-color: #f7f7f7 !important;
+  }
+
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    /*background-color: #f1f1f1;*/
+    /*color: rgb(97, 97, 97);*/
+    color: #fff;
+  }
+
+  .notification-dropdown{
+    top: 80% !important;
+    left: 63% !important;
+    width: 280px;
+  }
+
+  .settings-dropdown{
+    top: 80% !important;
+    left: 85% !important;
+    width: 200px;
+  }
+
+  .settings-dropdown a, .settings-dropdown a:hover{
+      color: #0045ab;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    right: 0;
+    top: 90%;
+  }
+
+  #search_box{
+      background-color: #fff; 
+      border-left: none; 
+      border-radius: 0px 25px 25px 0px;
+  }
+
+  .main{
+    background-color: #F7F7F7;
+    margin-top: 3%;
+  }
+
+  .mobile-home{
+    float: right !important;
+    margin: 10px;
+  }
+
+  .nav_logo{
+    width: 16%;
+    margin-top: 15px;
+  }
+
+  #no-id{
+    color: rgb(51, 51, 51);
+    float: right;
+    text-decoration: none;
+  }
+  .no-class, .no-class:hover{
+    color: rgb(51, 51, 51);
+    float: right;
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  .like-heart{
+    color: red;
+  }
+  a:focus, a:hover {
+    color: #56ade7;
+    text-decoration: none;
+  }
+  .like-symbol{
+    color: #3c7ab7;
+  }
+  
+  .pencil{
+    color: #0045ab; 
+    font-size: 18px;
+    margin-top: -33px;
+  }
+
+  .mobile-search-bar{
+      width: 70% !important;
+  }
+
+  .pencil-post{
+    color: #0045ab; 
+    font-size: 18px;
+  }
+
+  .modal {
+    top: 50px;
+  }
+
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #1f4177;
+  }
+
+  .edit-title{
+      margin-left: -8px !important;
+  }
+
+  .edit-title-name{
+      margin-left: -8px !important;
+  }
+
+  .delete-account-btn{
+      margin: 20px;
+  }
+
+  .delete-content{
+      padding-left: 20px;
+      font-size: 18px;
+      font-family: Arimo;
+      text-align: left;
+      color: #0045ab;
+      line-height: 24px;
+  }
+
+  .home-headline{
+      font-weight: bold;
+      color: rgb(19, 46, 85);
+      font-size: 14px;
+      margin-top: 0px;
+  }
+
+  .mobile_country_code{
+      width: 70% !important;
+      margin: 0px -60px !important;
+  }
+  .mobilenumber{
+      margin: 0px -130px !important;
+      width: 110% !important;
+  }
+  .mobile-auth{
+      margin-left: -38px;
+  }
+  .email-auth{
+      margin-left: -20px;
+  }
+  .your-status{
+      margin: 20px -60px;
+  }
+  .abt-status-lbl{
+      margin: 18px 40px;
+  }
+  .abt-status-box{
+      width: 141%;
+      padding: 5px 15px;
+  }
+  .title-lbl{
+      margin-top: 15px;
+  }
+
+  .doj-profile{
+      margin: 0px !important;
+  }
+
+  .feedback-txt-div{
+      margin: -10px 0px 0px 0px;
+  }
+  .cross-img{
+      width: 12px;
+      margin: 12px 0px 0px 230px;
+      position: absolute;
+      z-index: 2000;
+      display: block;
+      cursor: pointer;
+  }
+
+
+  /* mobile view */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      color: #000;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .mobile-dp-logout { display: none; }
+    .topnav.responsive .dropdown-content {position: relative; background-color: rgb(228, 228, 228);}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .mobile-home{
+      float: left !important;
+      margin: 10px;
+    }
+    label{
+      margin: 0px 0px 0px 0px;
+    }
+    .txtPost{
+      margin-left: 0px;
+    }
+
+    .postNow-radio{
+        margin-left: 0px;
+    }
+  }
+
+/*mine laptop resolution*/
 @media(max-width: 1280px){
-    .right a{
+    /*.right a{
         font-size:13px;
         font-weight:normal;
-    }
+    }*/
     .registerBtn{
-        padding: 6px;
+        padding: 3px;
+        margin-top: -3px;
+    }
+    .homeLbl{
+        color: #56ade7;
+        vertical-align: middle;
+        margin-left: 25px;
+        font-size: 16px;   
+    }
+    .notification-dropdown{
+        top: 80% !important;
+        left: 59% !important;
+        width: 280px;
+    }
+
+    .settings-dropdown{
+        top: 80% !important;
+        left: 83% !important;
+        width: 200px;
     }
 }
 
 @media(max-width: 1080px){
     .registerBtn{
-        padding: 6px;
+        padding: 2px;
     }
     .left{
         float: left;
@@ -320,9 +1212,90 @@ p{
     }
 }
 
+/*iPad view*/
 @media(max-width: 1024px){
+    .hr_home{
+        margin-top: -15px;
+    }
     .right{
         margin: 0;
+    }
+    .profileImg {
+        width: 85% !important;
+        height: 180px !important;
+    }
+    .mobileProfile{
+        text-align: center;
+    }
+    .select_profile{
+        display: none;
+    }
+    .cmtLikes{
+        margin-left: 80%;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        right: 0;
+        top: 85%; 
+    }
+    .main {
+        margin-top: 7%;
+    }
+    .modal {
+        top: 70px;
+    }
+    .social-icons-home {
+        font-size: 17px;
+        margin: 0px -100px auto 20px;
+    }
+    .advertisement{
+        right: 5px;
+    }
+    .mobile-search-bar{
+        width: 80%;
+        margin-left: -100px;
+    }
+    .pencil{
+        margin-top: -30px;
+    }
+    .editProfile, .abt_info_box{
+        margin-left: -107px !important;
+    }
+    .mobile_country_code, .mobilenumber{
+        margin: -5px -50px !important;
+    }
+    .mobile-auth{
+        margin-left: -60px !important;
+    }
+    .your-status{
+        margin: 30px 50px !important;
+    }
+    .pencil-div{
+        width: 30% !important;
+    }
+    .repeatedDivs {
+        width: 90% !important;
+    }
+    .doj-profile{
+        margin: 0px !important;
+    }
+    .company_address{
+        margin-left: -105px !important;
+    }
+    .content{
+        margin: 10px -445px !important;
+    }
+    .feedback_description{
+        margin: 12px -107px !important;
+        width: 92% !important;
+    }
+    .cross-img{
+        width: 12px;
+        margin: 12px 0px 0px 110px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
     }
 }
 
@@ -330,9 +1303,241 @@ p{
     .right{
         margin: 1rem 10% 4%;
     }
+    .userImgs{
+        width: 75px;
+        height: 75px;
+        margin-top: 0px;
+    }
+    /*.follow_btn, .un_follow_btn{
+        margin: -145px 0px 0px 170px;
+    }*/
+    .pencil{
+      color: #0045ab; 
+      font-size: 15px;
+    }
+
+    .pencil-post{
+      color: #0045ab; 
+      font-size: 15px;
+    }
+    .trust-lbl, .un-trust-lbl, .comment-lbl{
+      display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .tab-form{
+        height: 700px !important;
+    }
+    .btn-comment {
+        margin: -70px 0px 0px 420px;
+    }
+    .liveCmt {
+        margin-left: 40px !important;
+    }
+    .liveText {
+        width: 60%;
+        margin: -48px 0px 0px 80px;
+    }
+    .cmtUserImg{
+        width: 10%;
+    }
+    .cmtSearch{
+        margin-top: 20px;
+    }
+    .hr_home{
+        margin-top: -15px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        right: 0;
+        top: 85%; 
+    }
+    .cmtLikes{
+        margin-left: 15px;
+    }
+    .comment-hr {
+        border-top: #f3f3f3;
+        margin-top: 0px;
+    }
+    .commentsUserImg{
+        width: 7%;
+        border-radius: 50%;
+    }
+    .commentPara {
+        color: #000;
+        font-size: 12px;
+        font-family: Source Sans Pro;
+        text-align: left;
+        margin: -30px 0px 0px 115px;
+    }
+    .main {
+        margin-top: 9%;
+    }
+    .modal {
+        top: 70px;
+    }
+    label{
+        margin: 0px 0px 0px 0px;
+    }
+    .nav_logo{
+      width: 30%;
+      margin-top: 10px;
+    }
+    .commentDiv{
+        margin-left: -35px;
+        margin-top: 5px;
+    }
+    .txtPost{
+      margin-left: 0px;
+    }
+
+    .postNow-radio{
+        margin-left: 0px;
+    }
+
+    .advertisement{
+        display: none;
+    }
+    .posted-dt {
+        margin: 0px auto auto -10px;
+    }
+    .content {
+        margin: 20px auto auto -245% !important;
+        width: 335% !important;
+    }
+    .social-icons-home {
+        font-size: 17px;
+        margin: -22px 0px 0px 465px;
+    }
+    .mobile-search-bar{
+        width: 50%;
+        margin: -35px 180px;
+    }
+    .pencil{
+        margin-top: 0px !important;
+    }
+    .mobile_country_code, .mobilenumber{
+        margin: 5px -1px !important;
+        width: 92% !important;
+    }
+    .abt_info_box {
+        margin-left: -48px !important;
+        width: 92% !important;
+        height: 40% !important;
+    }
+    .mobile-auth{
+        margin-left: 0px !important;
+    }
+    .editProfile{
+        margin-left: -7px !important;
+    }
+    .repeatedDiv-profile {
+        margin: 20px 0px;
+    }
+    .profile-div-right{
+        margin-top: -15px;
+    }
+    .abt-status-lbl{
+        margin: 0px !important;
+    }
+    .pencil-div{
+        width: 60% !important;
+        margin-top: -85px;
+        text-align: right;
+        margin-right: -30px;
+    }
+    .example{
+        margin-top: 15px;
+    }
+    .company-description {
+        margin-left: -10px !important;
+        width: 92% !important;
+        height: 65px !important;
+    }
+    .profileImg{
+        width: 30% !important;
+        height: 170px !important;
+    }
+    .job_location_country{
+        margin: 0px -12px !important;
+        width: 104% !important;
+    }
+    .job_state {
+        margin: 5px -10px !important;
+        width: 40% !important;
+    }
+    .post_city {
+        margin: -38px 378px -5px !important;
+        width: 40%;
+    }
+    .repeatedDivs {
+        width: 106% !important;
+        margin-left: -22px !important;
+    }
+    .center-content{
+        margin: 0px;
+    }
+    .example{
+        width: 50%;
+        margin-left: -30px;
+    }
+    .search_type{
+        width: 48% !important;
+    }
+    .search{
+        margin: -35px 145px !important;
+    }
+    .search-btn{
+        margin: -35px 396px !important;
+    }
+    .doj-profile{
+        margin-left: 0px !important;
+    }
+    .company_address{
+        margin-left: 0px !important;
+        width: 90% !important;
+    }
+    .connection-div{
+        width: 100% !important;
+    }
+    .name-connection{
+        margin: -35px 70px !important;
+    }
+    .remove-connection{
+        margin: 10px 200px !important;
+    }
+    .liveCmt-msg{
+        margin-left: 70px !important;
+        width: 157% !important;
+    }
+    .feedback_description{
+        margin: 12px -8px !important;
+        width: 92% !important;
+    }
+    .cross-img{
+        width: 12px;
+        margin: -22px 0px 0px 370px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
+    }
 }
 
 @media(max-width: 580px){
+    .hr_home{
+        margin-top: -15px;
+    }
+    .example{
+        margin: 5px -50px;
+    }
+    .pencil-div{
+        width: 60% !important;
+        margin-top: -85px;
+        text-align: right;
+        margin-right: -30px;
+    }
     .left{
         float: none;
         text-align: center;
@@ -343,6 +1548,12 @@ p{
         display: flex;
         margin: 5% 0;
         justify-content: flex-end;
+    }
+    .title-lbl{
+        margin-top: 0px !important;
+    }
+    .cmt-txt{
+        width: 130% !important;
     }
     .registerBtn {
         background-color: rgb(3, 169, 244);
@@ -358,13 +1569,13 @@ p{
         top: 160% !important;
         left: -50px !important;
         margin-left: -80px !important;
-        height: 32px;
+        height: 25px;
         font-family: "Source Sans Pro";
         font-weight: normal;
         font-style: normal;
         text-decoration: none;
         font-size: 17px;
-        padding: 3px;
+        padding: 2px;
         color: rgb(255, 255, 255);
     }
     .homeDiv {
@@ -380,6 +1591,661 @@ p{
         display: none;
     }
     .main{
-        margin-top: 10%;
+        margin-top: 15%;
+    }
+    .userImgs{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        margin-top: 0px;
+    }
+    .pencil{
+        color: #0045ab; 
+        font-size: 15px;
+    }
+
+    .pencil-post{
+        color: #0045ab; 
+        font-size: 15px;
+    }
+    /*.follow_btn, .un_follow_btn{
+        margin: -80px 0px 0px 90px;
+    }*/
+    .nav_logo{
+        width: 50%;
+        margin-top: 10px;
+    }
+    .profileH2{
+        text-align: left;
+        overflow-wrap: break-word;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        font-family: "Source Sans Pro";
+        margin-top: 100px;
+    }
+    .profileImg {
+        width: 50% !important;
+        height: 150px !important;
+        border-radius: 50%;
+    }
+    .mobileProfile{
+        text-align: center;
+    }
+
+    .abt_info_box{
+        margin-left: -50px !important;
+        width: 315% !important;
+        height: 50% !important;
+        padding: 6px 12px;
+        margin-top: -20px;
+    }
+    .tab button{
+        font-size: 11px !important;
+    }
+    .abt-status-lbl{
+        margin: 0px !important;
+    }
+    .update_company{
+        margin-top: -5px !important;
+    }
+    .mobileCmt{
+        float: none !important;
+    }
+    .pForEnterprise{
+        word-spacing: normal !important;
+    }
+    .cmtSearch{
+        margin-top: 20px;
+    }
+
+    .liveCmt{
+        margin-left: -30px;
+    }
+    .cmtUserImg{
+        width: 20%;
+    }
+    .liveText{
+        width: 60%;
+        margin: -55px 0px 0px 60px;
+    }
+    .btn-comment{
+        /*width: 20%;*/
+        margin: -76px 0px 0px 250px;
+        font-size: 7px;
+        padding: 8px;
+    }
+    .repeatedDiv{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .comment-hr{
+        margin-top: 20px;
+    }
+    .repeatedDivCmt{
+        margin: 0px;
+    }
+    .cmtLikes{
+        margin-left: 15px;
+    }
+    .commentsUserImg{
+        width: 10%;
+        border-radius: 50%;
+    }
+    .commentPara{
+        margin: -20px 0px 0px 100px;
+    }
+    .modal {
+        top: 70px;
+    }
+    .commentDiv{
+        margin-left: -62px;
+    }
+    .deskHomePage{
+        display: none;
+    }
+    .mobileHomePage {
+        display: block;
+    }
+    .mobileHomePage{
+        margin: -200px 0px 0px 140px;
+    }
+    .registerBtns {
+        background-color: rgb(3, 169, 244);
+        border: 1px solid rgb(2, 198, 115);
+        border-radius: 5px;
+        box-shadow: rgb(51, 51, 51) 0px 5px 5px -5px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+        transform: translateZ(0px);
+        position: absolute !important;
+        width: 100px !important;
+        height: 25px;
+        font-family: "Source Sans Pro";
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 0px;
+        color: rgb(255, 255, 255);
+    }
+    .sign-in{
+        padding: 10px 30px !important;
+    }
+    #enterprise-reg, #forgot-password, #update_otp{
+        width: 50% !important;
+        padding: 10px 15px;
+    }
+    .forgot-span{
+        font-size: 14px !important;
+    }
+    /*.fa-caret-down, .dropdown{
+        visibility: hidden;
+    }*/
+    .imageA{
+        float: right !important;
+        margin: 0px auto !important;   
+    }
+    .mobile-home{
+        margin: 5px auto !important;
+    }
+    .mobile-logout{
+        visibility: visible !important;
+    }
+    .tablinks{
+        text-align: left !important;
+    }
+    .dropdown{
+        margin-top: 20px;
+    }
+    #formContents{
+        padding: 20px;
+    }
+    .mobileSearch{
+        padding: 1px;
+    }
+    .mobile-content{
+        margin: -100px 0px 0px 110px;
+    }
+    .advertisement{
+        display: none;
+    }
+    .social-icons-home {
+        font-size: 17px;
+        margin: 15px 40px;
+    }
+    .posted-dt {
+         margin: 10px 15px; 
+    }
+    .liveCmt{
+        margin-top: 10px !important;
+    }
+    .content {
+        margin: -15px -73px !important;
+        width: 194% !important;
+    }
+    .liveCmt-msg{
+        margin: auto 45px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .mb-view-dp{
+        visibility: hidden;
+    }
+    .mobile-logout{
+        margin-top: -30px;
+    }
+    .btn-group{
+        margin: -52px;
+    }
+    .mobile-search-bar{
+        width: 50%;
+        margin: 0px -20px;
+    }
+    .pencil{
+        margin: -25px 5px;
+    }
+    .mobile-notification{
+        margin: -3px 150px;
+        width: 50px;
+        z-index: 2000;
+        position: absolute;
+    }
+    .mobile-logout{
+        margin: 40px 0px;
+        width: 25%;
+    }
+    .repeatedDiv-profile{
+        margin: 20px 0px !important;
+    }
+    /*.profile-div-left{
+        width: 75px;
+    }*/
+    .mobile-view-txt{
+        width: 160px !important;
+        margin-top: 5px !important;
+    }
+    .profile-div-right{
+        display: none;
+    }
+    .mobile_country_code, .mobilenumber{
+        margin: 10px 0px !important;
+    }
+    .mobile-auth{
+        margin-left: 0px !important;
+    }
+    .editProfile{
+        margin-left: -5px !important;
+    }
+
+    .company-description{
+        margin-left: -8px !important;
+        width: 170px !important;
+        height: 75px !important;
+    }
+    .job_location_country{
+        margin-left: -12px !important;
+        width: 25% !important;
+    }
+    .job_state{
+        margin: -35px 68px !important;
+        width: 80% !important;
+    }
+    .post_city{
+        margin: 25px 3px 0px !important;
+        width: 98% !important;
+    }
+    .repeatedDivs{
+        width: 113% !important;
+        margin-left: -20px !important;
+    }
+    .center-content{
+        margin-left: 0px !important;
+    }
+    .search_type{
+        width: 145% !important;
+    }
+    .search{
+        width: 160% !important;
+    }
+    .search-btn{
+        margin: -35px 280px !important;
+        width: 40% !important;
+    }
+    .feedback_description{
+        margin: 12px -15px !important;
+        width: 108% !important;
+    }
+}
+
+@media(max-width: 414px){
+    .btn-comment {
+        /*width: 20%;*/
+        margin: -75px 0px 0px 300px;
+        font-size: 7px;
+        padding: 8px;
+    }
+    .liveCmt {
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+    .liveText {
+        width: 60%;
+        margin: -50px 0px 0px 70px;
+    }
+    .repeatedDiv{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .comment-hr{
+        margin-top: 20px;
+    }
+    .mobileHomePage {
+        margin: -225px 0px 0px 140px;
+    }
+    .content {
+        margin: 5px -72px !important;
+        width: 160% !important;
+    }
+    .search_type {
+        width: 110% !important;
+    }
+    .search-btn {
+        margin: -35px 320px !important;
+        width: 35% !important;
+    }
+    .job_state{
+        width: 450% !important;
+        margin: 0px -3px !important;
+    }
+    .post_city {
+        margin: -34px 191px 0px !important;
+        width: 255% !important;
+    }
+    .company_address{
+        margin-left: -6px !important;
+        width: 108% !important;
+    }
+    .connection-div{
+        width: 100% !important;
+    }
+    .name-connection{
+        margin: -35px 70px !important;
+    }
+    .remove-connection{
+        margin: 10px 200px !important;
+    }
+    .doj-profile{
+        margin-left: 0px !important;
+    }
+    .abt_info_box {
+        margin-left: -10px !important;
+        width: 110% !important;
+        height: 75px !important;
+        padding: 6px 12px;
+        margin-top: -20px;
+    }
+    .abt-status-box{
+        width: 200% !important;
+        margin-left: -43px !important;
+    }
+    .commentDiv{
+        margin: 0px -60px;
+        width: 60%;
+    }
+    .cross-img{
+        width: 12px;
+        margin: -22px 0px 0px 300px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 411px){
+    .liveText {
+      width: 60%;
+      margin: -50px 0px 0px 70px;
+    }
+    .repeatedDiv{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .comment-hr{
+        margin-top: 20px;
+    }
+    .mobileHomePage {
+        margin: -220px 0px 0px 165px;
+    }
+    .content {
+        margin: 5px -73px !important;
+        width: 162% !important;
+    }
+    .liveCmt {
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+    .commentDiv{
+        width: 62% !important;
+        margin: 0px -67px !important;
+    }
+    .abt_info_box {
+        margin-left: -50px !important;
+        width: 230% !important;
+        height: 50% !important;
+        padding: 6px 12px;
+        margin-top: -20px;
+    }
+    .mobile-view-txt {
+        width: 195px !important;
+        margin-top: 5px !important;
+    }
+    .company-description {
+        margin-left: -8px !important;
+        width: 195px !important;
+        height: 75px !important;
+    }
+    .search_type{
+        width: 125% !important;
+    }
+    .search-btn {
+        margin: -35px 320px !important;
+        width: 40% !important;
+    }
+    .job_state{
+        width: 450% !important;
+        margin: 0px -3px !important;
+    }
+    .post_city {
+        margin: -34px 191px 0px !important;
+        width: 255% !important;
+    }
+    .company_address{
+        margin-left: -6px !important;
+        width: 108% !important;
+    }
+    .connection-div{
+        width: 100% !important;
+    }
+    .name-connection{
+        margin: -35px 70px !important;
+    }
+    .remove-connection{
+        margin: 10px 200px !important;
+    }
+    .cross-img{
+        width: 12px;
+        margin: -22px 0px 0px 300px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px){
+    .btn-comment {
+        /*width: 20%;*/
+        margin: -75px 0px 0px 265px;
+        font-size: 7px;
+        padding: 8px;
+    }
+    .mobileHomePage {
+        margin: -200px 0px 0px 115px;
+    }
+    .content {
+        margin: 5px -71px !important;
+        width: 180% !important;
+    }
+    .search-btn {
+        margin: -35px 290px !important;
+        width: 40% !important;
+    }
+    .post_city {
+        margin: -34px 180px 0px !important;
+        width: 255% !important;
+    }
+    .mobile-view-txt {
+        width: 195px !important;
+        margin-left: -15px !important;
+    }
+    .cross-img{
+        width: 12px;
+        margin: -22px 0px 0px 270px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px){
+    .content {
+        margin: 5px -70px !important;
+        width: 172% !important;
+    }
+    .company-description {
+        margin-left: -8px !important;
+        width: 170px !important;
+        height: 75px !important;
+    }
+    .abt_info_box {
+        margin-left: -65px !important;
+        width: 315% !important;
+        height: 50% !important;
+        padding: 6px 12px;
+        margin-top: -20px;
+    }
+    .company-description{
+        margin-left: -8px !important;
+        width: 115% !important;
+        height: 75px !important;
+    }
+}
+
+@media (max-width: 360px){
+    .mobile-view-txt {
+        width: 165px !important;
+        margin-top: 5px !important;
+    }
+    .abt_info_box {
+        margin-left: -10px !important;
+        width: 113% !important;
+        height: 70px !important;
+    }
+    .abt-status-box {
+        margin-left: -46px !important;
+        width: 300% !important;
+        height: 125px !important;
+    }
+    .search-btn {
+        margin: -35px 280px !important;
+        width: 40% !important;
+    }
+    .job_state{
+        width: 500% !important;
+        margin: 0px -3px !important;
+    }
+    .post_city {
+        margin: -34px 177px 0px !important;
+        width: 255% !important;
+    }
+    .company_address{
+        margin-left: -6px !important;
+        width: 108% !important;
+    }
+    .connection-div{
+        width: 100% !important;
+    }
+    .name-connection{
+        margin: -35px 70px !important;
+    }
+    .remove-connection{
+        margin: 10px 200px !important;
+    }
+    .content {
+        margin: 5px -70px !important;
+        width: 180% !important;
+    }
+    .liveCmt{
+        margin: 0px 0px !important;
+        width: 100% !important;
+    }
+    .commentDiv{
+        margin-top: 5px !important;
+    }
+    .btn-comment{
+        margin: -75px 0px 0px 255px !important;
+    }
+    .liveText{
+        margin-top: -50px !important;
+    }
+    .cross-img{
+        width: 12px;
+        margin: -22px 0px 0px 260px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 320px){
+    .mobile-view-txt {
+        width: 140px !important;
+        margin-top: 3px !important;
+    }
+    .company-description {
+        margin-left: -10px !important;
+        width: 150px !important;
+        height: 75px !important;
+    }
+    .btn-comment {
+      margin: -75px 0px 0px 223px !important;
+      font-size: 6px;
+      padding: 7px;
+    }
+    .liveText {
+        width: 60%;
+        margin: -52px 0px 0px 55px;
+    }
+    .repeatedDiv{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .comment-hr{
+        margin-top: 20px;
+    }
+    .mobileHomePage {
+        margin: -180px 0px 0px 80px;
+    }
+    .mobile-home{
+        margin: -35px 0px;
+    }
+    .mobile-notification {
+        margin: -3px 110px !important;
+        width: 50px;
+        z-index: 2000;
+        position: absolute;
+    }
+    .content {
+        margin: -8px -45px !important;
+        width: 150% !important;
+    }
+    .posted-dt{
+        margin: 10px 0px !important;
+    }
+    .social-icons-home{
+        margin: 15px 13px;
+    }
+    .abt-status-box {
+        margin-left: -46px !important;
+        width: 600% !important;
+        height: 125px !important;
+    }
+    .search{
+        width: 205% !important;
+        margin: -35px 100px !important;
+    }
+    .search-btn {
+        margin: -35px 230px !important;
+        width: 40% !important;
+    }
+    .job_state{
+        width: 850% !important;
+        margin: 0px -3px !important;
+    }
+    .post_city {
+        margin: -34px 135px 0px !important;
+        width: 310% !important;
+    }
+    .cross-img{
+        width: 12px;
+        margin: -22px 0px 0px 210px;
+        position: absolute;
+        z-index: 2000;
+        display: none !important;
+        cursor: pointer;
     }
 }

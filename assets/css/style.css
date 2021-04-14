@@ -1,0 +1,310 @@
+body{
+	background: #005BC3;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.fa {
+  padding: 7px;
+  font-size: 16px;
+  width: 28px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.create_account{
+	border-radius: 50px 50px;
+	background: #305dc4;
+	border: 1px solid #69a9e4;
+	color: #fff;
+}
+
+.create_account_div{
+	padding: 15px 25px;
+	border-radius: 50px 50px;
+	background: #305dc4;
+	border: 1px solid #69a9e4;
+	color: #fff;
+}
+
+.sign_in{
+	margin-right: 30px;
+	color: #000;
+}
+
+.logo_div{
+	width: 40%;
+}
+
+.navbar{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    background: #fff;
+}
+
+.design_img{
+	margin-top: 70px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+.first_div{
+	margin-top: 70px;
+	font-weight: bold;
+}
+
+.asset1, .asset2, .asset3, .get_asset1, .get_asset2, .get_asset3{
+	background: #f3f4f8;
+    padding: 30px;
+    border-radius: 25px 25px 25px 0px;
+}
+
+.why_div{
+	margin-top: 30px;
+}
+
+.explore_benefits, .get_started{
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 50px 50px;
+	padding: 15px 40px;
+}
+
+/*.header_row{
+	position: relative; 
+	margin-top: 70px; 
+	color: #fff;
+}*/
+
+.learn_more{
+	border-radius: 50px 50px;
+	background: #305dc4;
+	border: 1px solid #69a9e4;
+	color: #fff;
+	padding: 15px 40px;
+}
+
+.main_div{
+	position: relative; 
+	margin: 60px 0px 0px 0px; 
+	color: #fff;
+}
+
+.home_image_1, .home_image_2{
+	width: 100%;
+}
+
+.header_content{
+	position: absolute;
+	width: 35%;
+	margin: 60px;
+}
+
+.header_content_landing{
+	position: absolute;
+    width: 31%;
+    margin: 40px;
+}
+
+.second_row{
+	background: #fff;
+	padding: 40px;
+}
+
+.h1_header_content{
+	font-size: 52px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.header_paragraph{
+	font-weight: 400;
+	color: #fff;
+}
+
+.why_lbl{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.why_h2_content{
+	font-weight: bold;
+}
+
+.get_asset1, .get_asset2, .get_asset3 {
+  position: relative;
+}
+
+.weak-password{
+  color: red;
+  font-size: 12px;
+}
+.strong-password{
+  color: green;
+  font-size: 12px;
+}
+.medium-password{
+  color: #ff8100;
+  font-size: 12px;
+}
+
+.circle {
+    border: 0.3em solid #fff;
+    text-align: center;
+    content: "";
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	transform:translate(50%,-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #305dc4;
+	mix-blend-mode:darken;
+}
+
+.circle p {
+	margin-top: 0.10em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+label{
+	color: #fff;
+	font-size: 12px;
+}
+
+.footer_div{
+	padding: 100px;
+}
+
+.form-control::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #2f5cc4; 
+} 
+  
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #2f5cc4; 
+} 
+  
+.form-control::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #2f5cc4; 
+} 
+
+.form-control{
+	height: 50px;
+    border-radius: 25px;
+    background: #f3f4f8;
+    color: #2f5cc4;
+    width: 85%;
+    padding: 20px;
+}
+
+.job_title{
+	height: 60px;
+}
+
+.sign_in_btn{
+	padding: 18px 70px;
+	border-radius: 50px 50px;
+	border: 1px solid #69a9e4;
+	color: #fff;
+}
+
+@media(max-width: 580px){
+	.logo_div{
+		width: 75%;
+	}
+	.navbar{
+		text-align: center;
+	}
+	.form-inline{
+		margin: auto;
+	}
+	.header_content_landing {
+		position: relative;
+	    width: 100%;
+	    margin: 10px;
+	}
+	.first_signin_div{
+		margin-top: 140px;
+    	font-weight: bold;
+	}
+	.header_content {
+	    position: absolute;
+	    width: 80%;
+	    margin: 15px;
+	}
+	.first_signup_div{
+		margin-top: 140px;
+    	font-weight: bold;
+	}
+	.first_div{
+		margin-top: 140px;
+    	font-weight: bold;
+	}
+	.second_row {
+	    background: #fff;
+	    padding: 0px;
+	}
+	.why_lbl {
+	    font-size: 50px;
+	    font-weight: bold;
+	}
+	.signin_footer {
+	    padding: 20px;
+	    position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	}
+	.footer_div{
+		padding: 20px;
+	}
+	.signup_footer{
+		position: absolute;
+	    bottom: -60%;
+	    height: 60px;
+	}
+}
+
