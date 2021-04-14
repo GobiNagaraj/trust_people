@@ -1,0 +1,12 @@
+<html>
+<body>
+    <div id="root"></div>
+    <script>
+        var host = 'ws://localhost:8080/trust_people_us/view/websockets.php';
+        var socket = new WebSocket(host);
+        socket.onmessage = function(e) {
+            document.getElementById('root').innerHTML = e.data;
+        };
+    </script>
+</body>
+</html>
